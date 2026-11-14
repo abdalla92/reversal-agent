@@ -1,0 +1,22 @@
+{
+  "name": "reversal-agent",
+  "private": true,
+  "type": "module",
+  "description": "Auditable MongoDB agent that resolves GOTIA transaction-reversal disputes.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "seed": "node src/seed.js",
+    "demo": "node src/demo.js",
+    "ask": "node src/ask.js",
+    "test": "node --test src/config.test.js src/policy.test.js src/embeddings.test.js src/demo.integration.test.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "mongodb": "^6.20.0"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^10.2.3"
+  }
+}
